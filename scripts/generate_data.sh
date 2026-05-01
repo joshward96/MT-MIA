@@ -1,5 +1,5 @@
-python generate_toy_data.py
-python generate_rtf.py
+python data_gen/generate_toy_data.py
+python data_gen/generate_rtf.py
 
 python ClavaDDPM/complex_pipeline.py --config_path configs/airbnb_42.yaml 
 python ClavaDDPM/complex_pipeline.py --config_path configs/airbnb_43.yaml 

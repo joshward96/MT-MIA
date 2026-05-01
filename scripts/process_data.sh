@@ -15,6 +15,6 @@ python data/domain_create.py -i data/california/split/mem/individual.csv data/ca
 python data/domain_create.py -i data/airbnb/split/mem/user.csv data/airbnb/split/mem/user_domain.json
 python data/domain_create.py -i data/airbnb/split/mem/session.csv data/airbnb/split/mem/session_domain.json
 
-python move_data_to_clava.py
+python data_gen/move_data_to_clava.py
 
-python prepare_reldiff_data.py
+python data_gen/prepare_reldiff_data.py

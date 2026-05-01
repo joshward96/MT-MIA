@@ -25,7 +25,7 @@ fi
 
 echo "=== Preparing RelDiff input data ==="
 cd "$ROOT_DIR"
-python3 prepare_reldiff_data.py
+python3 data_gen/prepare_reldiff_data.py
 
 cd "$RELDIFF_DIR"
 export WANDB_MODE=offline

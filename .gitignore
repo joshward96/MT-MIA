@@ -22,3 +22,6 @@ RelDiff/data/
 RelDiff/results/
 RelDiff/ckpt/
 ClavaDDPM/data/
+
+#
+junk/
