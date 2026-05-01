@@ -1,0 +1,62 @@
+{
+    "country": {
+        "size": 1,
+        "type": "discrete"
+    },
+    "province": {
+        "size": 11,
+        "type": "discrete"
+    },
+    "city": {
+        "size": 29,
+        "type": "continuous"
+    },
+    "postal_code": {
+        "size": 55,
+        "type": "continuous"
+    },
+    "gender": {
+        "size": 2,
+        "type": "discrete"
+    },
+    "education": {
+        "size": 5,
+        "type": "discrete"
+    },
+    "salary": {
+        "size": 703,
+        "type": "continuous"
+    },
+    "marital_status": {
+        "size": 3,
+        "type": "discrete"
+    },
+    "loyalty_card": {
+        "size": 3,
+        "type": "discrete"
+    },
+    "clv": {
+        "size": 949,
+        "type": "continuous"
+    },
+    "enrollment_type": {
+        "size": 2,
+        "type": "discrete"
+    },
+    "enrollment_year": {
+        "size": 7,
+        "type": "discrete"
+    },
+    "enrollment_month": {
+        "size": 12,
+        "type": "discrete"
+    },
+    "cancellation_year": {
+        "size": 7,
+        "type": "discrete"
+    },
+    "cancellation_month": {
+        "size": 13,
+        "type": "discrete"
+    }
+}

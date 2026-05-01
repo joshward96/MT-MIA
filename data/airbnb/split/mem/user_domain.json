@@ -1,0 +1,50 @@
+{
+    "gender": {
+        "size": 4,
+        "type": "discrete"
+    },
+    "age": {
+        "size": 56,
+        "type": "continuous"
+    },
+    "signup_method": {
+        "size": 3,
+        "type": "discrete"
+    },
+    "signup_flow": {
+        "size": 5,
+        "type": "discrete"
+    },
+    "language": {
+        "size": 11,
+        "type": "discrete"
+    },
+    "affiliate_channel": {
+        "size": 8,
+        "type": "discrete"
+    },
+    "affiliate_provider": {
+        "size": 9,
+        "type": "discrete"
+    },
+    "first_affiliate_tracked": {
+        "size": 5,
+        "type": "discrete"
+    },
+    "signup_app": {
+        "size": 4,
+        "type": "discrete"
+    },
+    "first_device_type": {
+        "size": 8,
+        "type": "discrete"
+    },
+    "first_browser": {
+        "size": 10,
+        "type": "discrete"
+    },
+    "country_destination": {
+        "size": 11,
+        "type": "discrete"
+    }
+}

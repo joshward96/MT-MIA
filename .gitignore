@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# PyTorch checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Weights & Biases
+wandb/
+*.wandb
+
+# Large data files
+*.parquet
+*.h5
+
+# RelDiff generated CSVs
+RelDiff/data/
+RelDiff/results/
+RelDiff/ckpt/
+ClavaDDPM/data/

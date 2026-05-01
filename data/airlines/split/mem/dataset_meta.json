@@ -1,0 +1,1 @@
+{"relation_order": [[null, "loyalty_history"], ["loyalty_history", "activity"]], "tables": {"loyalty_history": {"children": ["activity"], "parents": []}, "activity": {"children": [], "parents": ["loyalty_history"]}}}

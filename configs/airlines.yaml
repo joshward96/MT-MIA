@@ -1,0 +1,24 @@
+# Model Configuration
+LEARNING_RATE: 1e-5
+EPOCHS: 300
+BATCH_SIZE: 128
+PARENT_LOSS_WEIGHT: 10000
+CHILD_LOSS_WEIGHT: .001
+HIDDEN_DIM: 512
+
+
+entity_unit: 'loyalty_history'  # The node/entity to base each graph on
+schema_path: 'data/airlines/dataset_meta.json'
+
+dataset_paths:
+  train: 'synth_data/clava_synth/airlines/seed_42/'
+  mem: 'data/airlines/split/mem/'
+  non_mem: 'data/airlines/split/non_mem/'
+  ref: 'data/airlines/split/ref/'
+
+# Optional column exclusions
+global_exclude_columns: []  # Columns to exclude globally
+node_specific_exclude_columns: {}  # Columns to exclude per node type
+
+# Output files
+interim_output_file: 'results/airlines.json'

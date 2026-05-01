@@ -1,0 +1,11 @@
+name: gt
+channels:
+  - defaults
+dependencies:
+  - python=3.13
+  - graph-tool
+  - pip
+  - pip:
+    - syntherela
+
+

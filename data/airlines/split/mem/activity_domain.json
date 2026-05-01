@@ -1,0 +1,30 @@
+{
+    "year": {
+        "size": 2,
+        "type": "discrete"
+    },
+    "month": {
+        "size": 12,
+        "type": "discrete"
+    },
+    "total_flights": {
+        "size": 16,
+        "type": "continuous"
+    },
+    "distance": {
+        "size": 4999,
+        "type": "continuous"
+    },
+    "points_accumulated": {
+        "size": 5046,
+        "type": "continuous"
+    },
+    "points_redeemed": {
+        "size": 456,
+        "type": "continuous"
+    },
+    "dollar_cost_points_redeemed": {
+        "size": 102,
+        "type": "continuous"
+    }
+}

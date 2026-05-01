@@ -1,0 +1,20 @@
+# Model Configuration
+LEARNING_RATE: 5e-6
+EPOCHS: 150
+BATCH_SIZE: 512
+PARENT_LOSS_WEIGHT: 1000
+CHILD_LOSS_WEIGHT: 0.01
+HIDDEN_DIM: 1024
+
+# Dataset configuration
+entity_unit: 'user'  # The node/entity to base each graph on
+schema_path: 'data/airbnb/dataset_meta.json'
+
+dataset_paths:
+  train: 'synth_data/clava_synth/airbnb/seed_42/'
+  mem: 'data/airbnb/split/mem/'
+  non_mem: 'data/airbnb/split/non_mem/'
+  ref: 'data/airbnb/split/ref/'
+
+# Output files
+interim_output_file: 'results/airbnb.json'

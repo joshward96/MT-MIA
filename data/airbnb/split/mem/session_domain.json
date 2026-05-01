@@ -1,0 +1,22 @@
+{
+    "action": {
+        "size": 144,
+        "type": "continuous"
+    },
+    "action_type": {
+        "size": 8,
+        "type": "discrete"
+    },
+    "action_detail": {
+        "size": 90,
+        "type": "continuous"
+    },
+    "device_type": {
+        "size": 13,
+        "type": "discrete"
+    },
+    "secs_elapsed": {
+        "size": 5769,
+        "type": "continuous"
+    }
+}

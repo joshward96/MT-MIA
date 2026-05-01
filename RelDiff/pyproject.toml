@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reldiff"
+version = "0.0.0"
+authors = [
+  { name="Valter Hudovernik", email="valter.hudovernik@gmail.com" },
+]
+description = "TODO"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "syntherela",
+  "torch_geometric",
+  "torch_ema",
+  "wandb",
+  "kaleido",
+  "relbench[full]",
+  "tomli==2.0.1",
+  "syntheval"
+]
+
+[project.urls]
+Homepage = "TODO"
+Issues = "TODO"
+
+[tool.setuptools.packages]
+find = { "where" = ["src"] }

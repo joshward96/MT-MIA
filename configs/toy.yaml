@@ -1,0 +1,19 @@
+# Model Configuration
+LEARNING_RATE: 5e-6
+EPOCHS: 220
+BATCH_SIZE: 32
+PARENT_LOSS_WEIGHT: 0.01
+CHILD_LOSS_WEIGHT: .99
+HIDDEN_DIM: 512
+# Dataset configuration
+entity_unit: 't1'  # The node/entity to base each graph on
+schema_path: 'data/toy/dataset_meta.json'
+
+dataset_paths:
+  train: 'data/toy/synth/'
+  mem: 'data/toy/mem/'
+  non_mem: 'data/toy/non_mem/'
+  ref: 'data/toy/ref/'
+
+# Output files
+interim_output_file: 'results/toy.json'

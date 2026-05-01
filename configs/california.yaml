@@ -1,0 +1,17 @@
+# Model Configuration
+LEARNING_RATE: 5e-5
+EPOCHS: 45
+BATCH_SIZE: 128
+PARENT_LOSS_WEIGHT: 10000
+CHILD_LOSS_WEIGHT: 100
+HIDDEN_DIM: 1024
+entity_unit: 'household'  # The node/entity to base each graph on
+schema_path: 'data/california/dataset_meta.json'
+
+dataset_paths:
+  train: 'data/california/split/synth/'
+  mem: 'data/california/split/mem/'
+  non_mem: 'data/california/split/non_mem/'
+  ref: 'data/california/split/ref/'
+
+interim_output_file: 'results/ca.json'

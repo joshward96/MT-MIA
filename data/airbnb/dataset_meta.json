@@ -1,0 +1,1 @@
+{"relation_order": [[null, "user"], ["user", "session"]], "tables": {"user": {"children": ["session"], "parents": []}, "session": {"children": [], "parents": ["user"]}}}

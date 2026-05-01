@@ -1,0 +1,29 @@
+\begin{table*}[t]
+  \centering
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \caption{Per-seed mean and standard deviation for the comparison of MT-MIA against the best baseline attack. Values are reported as $\text{mean}_{\pm\sigma}$ over three seeds. For each (model, dataset, metric) row, \emph{Baseline} reports the score of the strongest prior attack on that configuration. This is the full-precision version of Table~\ref{tab:mt-mia-vs-baseline}.}
+  \label{tab:mt-mia-vs-baseline-full}
+  \begin{tabular}{llcccccc}
+    \toprule
+    Model & Metric & \multicolumn{2}{c}{California} & \multicolumn{2}{c}{Airbnb} & \multicolumn{2}{c}{Airlines} \\
+    \cmidrule(lr){3-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+     &  & Baseline & MT-MIA & Baseline & MT-MIA & Baseline & MT-MIA \\
+    \midrule
+    \textsc{ClavaDDPM} & AUC-ROC & $0.79_{\,\pm0.01}$ & $0.69_{\,\pm0.05}$ & $0.79_{\,\pm0.01}$ & $0.80_{\,\pm0.01}$ & $0.69_{\,\pm0.00}$ & $0.66_{\,\pm0.01}$ \\
+     & TPR@FPR$=$0 & $0.00_{\,\pm0.00}$ & $0.07_{\,\pm0.09}$ & $0.00_{\,\pm0.00}$ & $0.01_{\,\pm0.00}$ & $0.07_{\,\pm0.01}$ & $0.17_{\,\pm0.03}$ \\
+     & TPR@FPR$=$0.001 & $0.01_{\,\pm0.00}$ & $0.09_{\,\pm0.08}$ & $0.01_{\,\pm0.00}$ & $0.01_{\,\pm0.00}$ & $0.08_{\,\pm0.01}$ & $0.21_{\,\pm0.06}$ \\
+     & TPR@FPR$=$0.01 & $0.11_{\,\pm0.02}$ & $0.15_{\,\pm0.08}$ & $0.06_{\,\pm0.01}$ & $0.09_{\,\pm0.01}$ & $0.12_{\,\pm0.00}$ & $0.31_{\,\pm0.05}$ \\
+    \midrule
+    \textsc{RelDiff} & AUC-ROC & $0.67_{\,\pm0.01}$ & $0.64_{\,\pm0.01}$ & $0.57_{\,\pm0.06}$ & $0.62_{\,\pm0.01}$ & $0.51_{\,\pm0.00}$ & $0.49_{\,\pm0.01}$ \\
+     & TPR@FPR$=$0 & $0.00_{\,\pm0.00}$ & $0.15_{\,\pm0.03}$ & $0.00_{\,\pm0.00}$ & $0.03_{\,\pm0.02}$ & $0.00_{\,\pm0.00}$ & $0.00_{\,\pm0.00}$ \\
+     & TPR@FPR$=$0.001 & $0.01_{\,\pm0.00}$ & $0.17_{\,\pm0.01}$ & $0.00_{\,\pm0.00}$ & $0.03_{\,\pm0.02}$ & $0.00_{\,\pm0.00}$ & $0.00_{\,\pm0.00}$ \\
+     & TPR@FPR$=$0.01 & $0.13_{\,\pm0.01}$ & $0.22_{\,\pm0.01}$ & $0.02_{\,\pm0.01}$ & $0.06_{\,\pm0.01}$ & $0.01_{\,\pm0.00}$ & $0.01_{\,\pm0.00}$ \\
+    \midrule
+    \textsc{RTF} & AUC-ROC & $0.57_{\,\pm0.01}$ & $0.52_{\,\pm0.02}$ & $0.58_{\,\pm0.00}$ & $0.58_{\,\pm0.00}$ & $0.54_{\,\pm0.00}$ & $0.51_{\,\pm0.01}$ \\
+     & TPR@FPR$=$0 & $0.00_{\,\pm0.00}$ & $0.00_{\,\pm0.01}$ & $0.00_{\,\pm0.00}$ & $0.00_{\,\pm0.00}$ & $0.01_{\,\pm0.01}$ & $0.01_{\,\pm0.00}$ \\
+     & TPR@FPR$=$0.001 & $0.00_{\,\pm0.00}$ & $0.00_{\,\pm0.00}$ & $0.01_{\,\pm0.00}$ & $0.00_{\,\pm0.00}$ & $0.02_{\,\pm0.00}$ & $0.01_{\,\pm0.01}$ \\
+     & TPR@FPR$=$0.01 & $0.02_{\,\pm0.00}$ & $0.02_{\,\pm0.01}$ & $0.02_{\,\pm0.00}$ & $0.02_{\,\pm0.01}$ & $0.05_{\,\pm0.02}$ & $0.03_{\,\pm0.01}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table*}

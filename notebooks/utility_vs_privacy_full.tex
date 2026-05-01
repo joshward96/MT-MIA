@@ -1,0 +1,25 @@
+\begin{table*}[t]
+  \centering
+  \small
+  \setlength{\tabcolsep}{5pt}
+  \caption{Fidelity metrics (left) versus MT-MIA privacy leakage (right) for each (model, dataset). Values are $\text{mean}_{\pm\sigma}$ over three seeds. Higher fidelity values indicate higher agreement with the real data; higher MT-MIA values indicate greater privacy leakage. \textsc{RTF} achieves the lowest leakage but at substantial fidelity cost, while \textsc{ClavaDDPM} and \textsc{RelDiff} achieve strong fidelity and leak substantially under MT-MIA.}
+  \begin{tabular}{llccc@{\hspace{1.5em}}cc}
+    \toprule
+    Model & Dataset & \multicolumn{3}{c}{Fidelity} & \multicolumn{2}{c}{MT-MIA} \\
+    \cmidrule(lr){3-5} \cmidrule(lr){6-7}
+     &  & Col.~Shapes & Cardinality & Avg.~$k$-hop & AUC-ROC & TPR@FPR$=$0.001 \\
+    \midrule
+    \textsc{ClavaDDPM} & California & $0.97_{\,\pm0.00}$ & $0.98_{\,\pm0.01}$ & $0.93_{\,\pm0.01}$ & $0.69_{\,\pm0.05}$ & $0.09_{\,\pm0.08}$ \\
+     & Airbnb & $0.98_{\,\pm0.00}$ & $0.98_{\,\pm0.01}$ & $0.92_{\,\pm0.03}$ & $0.80_{\,\pm0.01}$ & $0.01_{\,\pm0.00}$ \\
+     & Airlines & $0.99_{\,\pm0.00}$ & $0.99_{\,\pm0.00}$ & $0.97_{\,\pm0.00}$ & $0.66_{\,\pm0.01}$ & $0.21_{\,\pm0.06}$ \\
+    \midrule
+    \textsc{RelDiff} & California & $0.97_{\,\pm0.00}$ & $1.00_{\,\pm0.00}$ & $0.93_{\,\pm0.00}$ & $0.64_{\,\pm0.01}$ & $0.17_{\,\pm0.01}$ \\
+     & Airbnb & $0.98_{\,\pm0.00}$ & $1.00_{\,\pm0.00}$ & $0.90_{\,\pm0.03}$ & $0.62_{\,\pm0.01}$ & $0.03_{\,\pm0.02}$ \\
+     & Airlines & $0.95_{\,\pm0.01}$ & $1.00_{\,\pm0.00}$ & $0.93_{\,\pm0.01}$ & $0.49_{\,\pm0.01}$ & $0.00_{\,\pm0.00}$ \\
+    \midrule
+    \textsc{RTF} & California & $0.84_{\,\pm0.01}$ & $0.78_{\,\pm0.13}$ & $0.72_{\,\pm0.01}$ & $0.52_{\,\pm0.02}$ & $0.00_{\,\pm0.00}$ \\
+     & Airbnb & $0.90_{\,\pm0.02}$ & $0.85_{\,\pm0.01}$ & $0.75_{\,\pm0.04}$ & $0.58_{\,\pm0.00}$ & $0.00_{\,\pm0.00}$ \\
+     & Airlines & $0.87_{\,\pm0.01}$ & $0.06_{\,\pm0.00}$ & $0.80_{\,\pm0.01}$ & $0.51_{\,\pm0.01}$ & $0.01_{\,\pm0.01}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
